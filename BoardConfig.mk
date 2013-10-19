@@ -49,3 +49,7 @@ TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210,SPH-D710VMUB,SPH-
 -include vendor/samsung/d710/BoardConfigVendor.mk
 
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/d710/shbootimg.mk
+
+ifdef MK_RELEASE
+WITH_DEXPREOPT := true
+endif
