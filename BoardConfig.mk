@@ -28,22 +28,22 @@ TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
 
 # Selinux
-BOARD_SEPOLICY_DIRS := \
+BOARD_SEPOLICY_DIRS += \
     device/samsung/d710/selinux
 
-BOARD_SEPOLICY_UNION := \
+BOARD_SEPOLICY_UNION += \
     device.te \
-    domain.te \
     file.te \
     file_contexts \
-    rild.te \
+    mediaserver.te \
+    system.te \
     wimax.te
 
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
 
 # RIL
-BOARD_PROVIDES_LIBRIL := false
+BOARD_PROVIDES_LIBRIL := true
 BOARD_MOBILEDATA_INTERFACE_NAME := "ppp0"
 
 # Recovery

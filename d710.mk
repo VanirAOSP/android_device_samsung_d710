@@ -45,10 +45,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
-# Fix USB transfer speeds
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vold.umsdirtyratio=20
-
 # Net
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
@@ -60,7 +56,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
 
 # Sensors
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
     sensors.exynos4
 
 # WIMAX
@@ -68,6 +64,9 @@ PRODUCT_PACKAGES += \
     AngryGPS \
     SprintMenu \
     SystemUpdateUI
+
+#    WiMAXSettings \
+#    WiMAXHiddenMenu \
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
