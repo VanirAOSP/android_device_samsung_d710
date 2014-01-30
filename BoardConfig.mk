@@ -16,7 +16,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
--include device/samsung/galaxys2-common/BoardCommonConfig.mk
+-include device/samsung/d710-common/BoardCommonConfig.mk
 
 TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
 
@@ -24,7 +24,7 @@ TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth
 
 # Kernel Config
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_SOURCE := kernel/samsung/d710
 TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
 
 # Selinux
