@@ -139,6 +139,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cwm.enable_key_repeat=true
 
 # Include common makefile
+
 $(call inherit-product, device/samsung/d710-common/common.mk)
 DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlay \
