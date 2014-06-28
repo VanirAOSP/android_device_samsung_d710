@@ -140,8 +140,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Include common makefile
 
-$(call inherit-product, device/samsung/d710-common/common.mk)
+$(call inherit-product, device/samsung/galaxys2-common/common.mk)
 DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlay \
-    device/samsung/d710-common/overlay
+    device/samsung/galaxys2-common/overlay
 $(call inherit-product-if-exists, vendor/samsung/d710/d710-vendor.mk)
