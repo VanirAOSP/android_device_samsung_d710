@@ -16,7 +16,7 @@
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
--include device/samsung/d710-common/BoardCommonConfig.mk
+-include device/samsung/galaxys2-common/BoardCommonConfig.mk
 
 TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
 
